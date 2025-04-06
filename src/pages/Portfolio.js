@@ -3,6 +3,7 @@ const Portfolio = () => {
     { img: '/images/project6.jpg', title: 'E-commerce Platform' },
     { img: '/images/project5.jpg', title: 'Fitness App' },
     { img: '/images/project4.jpg', title: 'Travel Dashboard' },
+  
   ];
 
   return (
