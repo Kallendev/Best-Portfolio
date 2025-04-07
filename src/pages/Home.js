@@ -12,7 +12,7 @@ const Home = () => {
         </div>
         <div className="image-container">
           <img 
-            src={process.env.PUBLIC_URL + "/images/kallen.png"} 
+            src={process.env.PUBLIC_URL + "/images/kallenpassport.jpg"} 
             alt="Kallen Mugambi" 
             className="profile-image"
             loading="eager"  // Load immediately since it's above the fold
