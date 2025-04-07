@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FiMenu, FiX } from 'react-icons/fi';
-import './App.css';
+import '../App.css';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
