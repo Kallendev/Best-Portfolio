@@ -1,4 +1,5 @@
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -12,9 +13,9 @@ const Footer = () => {
         <div className="footer-section">
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Work</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><Link to="/about">About</Link></li>
+            <li><Link to="/portfolio">Work</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
           </ul>
         </div>
 
@@ -24,10 +25,10 @@ const Footer = () => {
             <a href="https://github.com/Kallendev" target="_blank" rel="noopener noreferrer">
               <FaGithub className="icon" />
             </a>
-            <a href="https://linkedin.com/in/kallen" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/kallen-mugambi/" target="_blank" rel="noopener noreferrer">
               <FaLinkedin className="icon" />
             </a>
-            <a href="https://twitter.com/kallen" target="_blank" rel="noopener noreferrer">
+            <a href="https://x.com/kallenmugambi" target="_blank" rel="noopener noreferrer">
               <FaTwitter className="icon" />
             </a>
           </div>
