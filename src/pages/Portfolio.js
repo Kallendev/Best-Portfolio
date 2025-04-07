@@ -1,9 +1,17 @@
 const Portfolio = () => {
   const projects = [
-    { img: '/images/project6.jpg', title: 'E-commerce Platform' },
-    { img: '/images/project5.jpg', title: 'Fitness App' },
-    { img: '/images/project4.jpg', title: 'Travel Dashboard' },
-  
+    { 
+      img: process.env.PUBLIC_URL + "/images/project6.jpg", 
+      title: 'E-commerce Platform' 
+    },
+    { 
+      img: process.env.PUBLIC_URL + "/images/project5.jpg", 
+      title: 'Fitness App' 
+    },
+    { 
+      img: process.env.PUBLIC_URL + "/images/project4.jpg", 
+      title: 'Travel Dashboard' 
+    },
   ];
 
   return (
@@ -12,7 +20,15 @@ const Portfolio = () => {
       <div className="portfolio-grid">
         {projects.map((project, index) => (
           <div key={index} className="portfolio-item">
-            <img src={project.img} alt={project.title} />
+            <img 
+              src={project.img} 
+              alt={project.title}
+              className="portfolio-image"
+              loading="lazy"
+            />
+            <div className="image-overlay">
+              <h3>{project.title}</h3>
+            </div>
           </div>
         ))}
       </div>

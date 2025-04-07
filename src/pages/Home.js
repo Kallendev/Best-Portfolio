@@ -1,4 +1,3 @@
-// pages/Home.js
 const Home = () => {
   return (
     <section className="hero">
@@ -16,6 +15,7 @@ const Home = () => {
             src={process.env.PUBLIC_URL + "/images/kallen.png"} 
             alt="Kallen Mugambi" 
             className="profile-image"
+            loading="eager"  // Load immediately since it's above the fold
           />
         </div>
       </div>
