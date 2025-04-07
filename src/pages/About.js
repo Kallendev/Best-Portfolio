@@ -1,4 +1,5 @@
-// pages/About.js
+import { Link } from 'react-router-dom';
+
 const About = () => {
   return (
     <section className="about">
@@ -27,12 +28,12 @@ const About = () => {
         </div>
 
         <div className="cta-buttons">
-          <a href="/portfolio" className="cta-btn">See My Work</a>
-          <a href="/contact" className="cta-btn outline">Let's Collaborate</a>
+          <Link to="/portfolio" className="cta-btn">See My Work</Link>
+          <Link to="/contact" className="cta-btn outline">Let's Collaborate</Link>
         </div>
       </div>
     </section>
   );
 };
-  
-  export default About;
+
+export default About;
