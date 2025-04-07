@@ -452,3 +452,133 @@ body {
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(255, 51, 102, 0.3);
 }
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .layout {
+    padding: 2rem 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-container {
+    margin-top: 2rem;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .profile-image {
+    width: 250px;
+    height: 250px;
+  }
+
+  .service-card {
+    padding: 1.5rem;
+  }
+}
+
+/* Footer Styles */
+.footer {
+  background: var(--secondary);
+  padding: 4rem 0 2rem;
+  margin-top: auto;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.footer-section {
+  flex: 1;
+  margin-right: 2rem;
+}
+
+.footer-section h4 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.social-links .icon {
+  font-size: 1.5rem;
+  color: var(--light);
+  transition: color 0.3s ease;
+}
+
+.social-links .icon:hover {
+  color: var(--primary);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 2rem;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  margin-top: 4rem;
+}
+
+/* Make layout fill viewport height */
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+/* Mobile Menu */
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--light);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.nav-links.active {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: var(--dark);
+  padding: 2rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+  }
+}

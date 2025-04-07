@@ -1,17 +1,28 @@
-import { NavLink } from 'react-router-dom';
-import '../App.css';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { FiMenu, FiX } from 'react-icons/fi';
+import './App.css';
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <nav className="navbar">
       <div className="brand">Kallen.</div>
-      <div className="nav-links">
-        <NavLink to="/" exact activeClassName="active">Home</NavLink>
-        <NavLink to="/about" activeClassName="active">About</NavLink>
-        <NavLink to="/services" activeClassName="active">Services</NavLink>
-        <NavLink to="/portfolio" activeClassName="active">Portfolio</NavLink>
-        <NavLink to="/contact" activeClassName="active">Contact</NavLink>
+      
+      <div className={`nav-links ${isOpen ? 'active' : ''}`}>
+        <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
+        <Link to="/about" onClick={() => setIsOpen(false)}>About</Link>
+        <Link to="/portfolio" onClick={() => setIsOpen(false)}>Work</Link>
+        <Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link>
       </div>
+
+      <button 
+        className="mobile-menu-btn"
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        {isOpen ? <FiX /> : <FiMenu />}
+      </button>
     </nav>
   );
 };
