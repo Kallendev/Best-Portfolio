@@ -34,6 +34,7 @@ const About = () => {
         <div className="cta-buttons">
           <Link to="/portfolio" className="cta-btn">See My Work</Link>
           <Link to="/contact" className="cta-btn outline">Let's Collaborate</Link>
+          <Link to="/blog" className="cta-btn blog">📚 Kallen’s Corner</Link>
         </div>
       </div>
     </section>
