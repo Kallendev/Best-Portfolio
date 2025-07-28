@@ -7,8 +7,12 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="navbar">
-      <div className="brand">Kallen.</div>
+        <nav className="navbar">
+        <div className="brand">
+      <span className="kallen">Kallen</span>
+      <span className="dev">Dev</span> <span className="emoji">💻</span>
+    </div>
+
       
       <div className={`nav-links ${isOpen ? 'active' : ''}`}>
         <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>

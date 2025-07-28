@@ -1,25 +1,45 @@
-// pages/Contact.js
 import { useState } from 'react';
 import { FiDownload, FiMail, FiPhone, FiCheckCircle } from 'react-icons/fi';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({ 
-    name: '', 
-    email: '', 
-    message: '' 
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
   });
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setSubmitted(true);
-    // Reset form after submission
-    setFormData({ name: '', email: '', message: '' });
-    
-    // Reset message after 5 seconds
-    setTimeout(() => {
-      setSubmitted(false);
-    }, 5000);
+
+    const response = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        access_key: 'abd70c28-fa59-4bff-863f-9946a04458a2',
+        name: formData.name,
+        email: formData.email,
+        message: formData.message
+      })
+    });
+
+    const result = await response.json();
+
+    if (result.success) {
+      setSubmitted(true);
+      setFormData({ name: '', email: '', message: '' });
+      setTimeout(() => {
+        setSubmitted(false);
+      }, 5000);
+    } else {
+      setError(true);
+      setTimeout(() => {
+        setError(false);
+      }, 5000);
+    }
   };
 
   const handleInputChange = (e) => {
@@ -30,7 +50,7 @@ const Contact = () => {
   return (
     <section className="contact-container">
       <h1 className="contact-heading">Let's Create Something Amazing</h1>
-      
+
       <div className="contact-wrapper">
         {/* Left Side - Contact Info */}
         <div className="contact-info">
@@ -67,6 +87,10 @@ const Contact = () => {
               <FiCheckCircle className="success-icon" />
               <h2>Thank you for your message!</h2>
               <p>I'll get back to you within 24 hours</p>
+            </div>
+          ) : error ? (
+            <div className="error-message">
+              <p>Something went wrong. Please try again.</p>
             </div>
           ) : (
             <>
@@ -116,4 +140,5 @@ const Contact = () => {
     </section>
   );
 };
+
 export default Contact;

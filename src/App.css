@@ -33,8 +33,23 @@ body {
 .brand {
   font-size: 2rem;
   font-weight: 700;
-  color: var(--light);
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
 }
+
+.kallen {
+  color: var(--light); /* White */
+}
+
+.dev {
+  color: var(--primary); /* Pink */
+}
+
+.emoji {
+  font-size: 1.5rem;
+}
+
 
 .nav-links {
   display: flex;
@@ -663,4 +678,83 @@ body {
 .footer-bottom p {
   font-size: 0.8rem;
   opacity: 0.7;
+}
+.portfolio-section {
+  padding: 4rem 2rem;
+  background-color: var(--dark);
+  color: var(--light);
+  text-align: center;
+}
+
+.portfolio-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--light);
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.portfolio-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+  background-color: var(--secondary);
+}
+
+.portfolio-card:hover {
+  transform: scale(1.03);
+}
+
+.portfolio-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.portfolio-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(18, 18, 18, 0.85); /* fallback for var(--dark) with opacity */
+  color: var(--light);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.portfolio-card:hover .portfolio-overlay {
+  opacity: 1;
+}
+
+.portfolio-overlay h3 {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.view-button {
+  background-color: var(--primary);
+  color: var(--light);
+  padding: 0.6rem 1.2rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.view-button:hover {
+  background-color: #ff5580; /* slightly lighter pink */
 }
