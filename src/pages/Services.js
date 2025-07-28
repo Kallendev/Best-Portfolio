@@ -5,12 +5,12 @@ const Services = () => {
         description: "Creating intuitive and beautiful user experiences that drive engagement and conversion."
       },
       { 
-        title: "Web Development", 
-        description: "Building responsive, performant websites with modern technologies."
+        title: "Software Development", 
+        description: "Building responsive, performant softwares with modern technologies."
       },
       { 
-        title: "Mobile App Design", 
-        description: "Designing native mobile experiences that users love."
+        title: "Graphic Design", 
+        description: "Brand identities, social media kits, posters, decks, and campaign visuals designed to be bold, consistent, and instantly recognizable."
       },
     ];
   

@@ -46,7 +46,7 @@ const Contact = () => {
               <FiMail className="icon" />
               <div>
                 <h3>Email</h3>
-                <p>contact@kallen.design</p>
+                <p>kallenmugambi@gmail.com</p>
               </div>
             </div>
 
@@ -54,7 +54,7 @@ const Contact = () => {
               <FiPhone className="icon" />
               <div>
                 <h3>Phone</h3>
-                <p>+61 412 345 678</p>
+                <p>+254740697607</p>
               </div>
             </div>
           </div>

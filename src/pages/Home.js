@@ -4,7 +4,7 @@ const Home = () => {
       <div className="hero-content">
         <div className="text-container">
           <h1>Kallen.</h1>
-          <h2>UI/UX Designer</h2>
+          <h2>Software Engineer</h2>
           <div className="intro-text">
             <p>Hi, I'm Kallen</p>
             <p>Mugambi From Kenya</p>

@@ -2,15 +2,15 @@ const Portfolio = () => {
   const projects = [
     { 
       img: process.env.PUBLIC_URL + "/images/project6.jpg", 
-      title: 'E-commerce Platform' 
+      title: 'CAT ADOPTION WEBSITE' 
     },
     { 
       img: process.env.PUBLIC_URL + "/images/project5.jpg", 
-      title: 'Fitness App' 
+      title: 'FUNDIFIX WEBSITE' 
     },
     { 
       img: process.env.PUBLIC_URL + "/images/project4.jpg", 
-      title: 'Travel Dashboard' 
+      title: 'ATTENDANCE TRACKER' 
     },
   ];
 

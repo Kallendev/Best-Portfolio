@@ -18,7 +18,7 @@ const About = () => {
           
           <div className="point">
             <h3>🏆 Recent Recognition</h3>
-            <p>2023 Awwwards Site of the Day • CSS Design Awards Winner • Featured on Behance UI Top 100</p>
+            <p>2023 Awards Site of the Day • CSS Design Awards Winner • Featured on Behance UI Top 100</p>
           </div>
 
           <div className="point">
