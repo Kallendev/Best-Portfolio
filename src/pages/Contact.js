@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import React from 'react';
+
 import { FiDownload, FiMail, FiPhone, FiCheckCircle } from 'react-icons/fi';
 
 const Contact = () => {

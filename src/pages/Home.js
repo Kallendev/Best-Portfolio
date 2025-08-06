@@ -1,3 +1,5 @@
+import React from 'react';
+
 const Home = () => {
   return (
     <section className="hero">
@@ -12,10 +14,10 @@ const Home = () => {
         </div>
         <div className="image-container">
           <img 
-            src={process.env.PUBLIC_URL + "/images/kallenpassport.jpg"} 
+            src="/images/kallenpassport.jpg" 
             alt="Kallen Mugambi" 
             className="profile-image"
-            loading="eager"  // Load immediately since it's above the fold
+            loading="eager"
           />
         </div>
       </div>
