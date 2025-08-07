@@ -3,17 +3,17 @@ import React from 'react';
 const Portfolio = () => {
   const projects = [
     { 
-      img: `${process.env.PUBLIC_URL}/images/catadoption.png`, 
+      img: "/images/catadoption.png", 
       title: 'CAT ADOPTION WEBSITE',
       link: 'https://kallendev.github.io/CATADOPTION/index.html'
     },
     { 
-      img: `${process.env.PUBLIC_URL}/images/project5.jpg`, 
+      img: "/images/project5.jpg", 
       title: 'FUNDIFIX WEBSITE',
       link: '#'
     },
     { 
-      img: `${process.env.PUBLIC_URL}/images/project4.jpg`, 
+      img: "/images/project4.jpg", 
       title: 'ATTENDANCE TRACKER',
       link: '#'
     },
