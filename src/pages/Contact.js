@@ -57,7 +57,8 @@ const Contact = () => {
         {/* Left Side - Contact Info */}
         <div className="contact-info">
           <div className="download-section">
-            <a href="/cv.pdf" download className="download-btn">
+            <a href="/Best-Portfolio/cv.pdf" download className="download-btn">
+
               <FiDownload className="icon" />
               Download CV
             </a>
