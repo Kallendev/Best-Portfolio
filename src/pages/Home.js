@@ -12,14 +12,15 @@ const Home = () => {
             <p>Mugambi From Kenya</p>
           </div>
         </div>
-        <div className="image-container">
-          <img 
-            src="/images/kallenpassport.jpg" 
-            alt="Kallen Mugambi" 
-            className="profile-image"
-            loading="eager"
-          />
-        </div>
+       <div className="image-container">
+      <img 
+        src={`${import.meta.env.BASE_URL}images/kallenpassport.jpg`} 
+        alt="Kallen Mugambi" 
+        className="profile-image"
+        loading="eager"
+      />
+    </div>
+
       </div>
     </section>
   );
