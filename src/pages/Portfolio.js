@@ -1,21 +1,21 @@
 import React from 'react';
 
 const Portfolio = () => {
-  const base = import.meta.env.BASE_URL;
+  const base = process.env.PUBLIC_URL;
 
   const projects = [
     { 
-      img: `${base}images/catadoption.png`, 
+      img: `${base}/images/catadoption.png`, 
       title: 'CAT ADOPTION WEBSITE',
       link: 'https://kallendev.github.io/CATADOPTION/index.html'
     },
     { 
-      img: `${base}images/project5.jpg`, 
+      img: `${base}/images/project5.jpg`, 
       title: 'FUNDIFIX WEBSITE',
       link: '#'
     },
     { 
-      img: `${base}images/project4.jpg`, 
+      img: `${base}/images/project4.jpg`, 
       title: 'ATTENDANCE TRACKER',
       link: '#'
     },
