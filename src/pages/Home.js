@@ -2,7 +2,7 @@ import React from 'react';
 
 const Home = () => {
   // Image path relative to the public folder
-  const imagePath = '/images/kallenpassport.jpg';
+  const imagePath = '/Best-Portfolio/images/kallenpassport.jpg';
 
   return (
     <section className="hero">
