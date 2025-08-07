@@ -5,19 +5,19 @@ const Portfolio = () => {
 
   const projects = [
     { 
-      img: `${base}/images/catadoption.jpg`, 
+      img: `${base}/images/catadoption.JPG`, 
       title: 'CAT ADOPTION WEBSITE',
       link: 'https://kallendev.github.io/CATADOPTION/index.html'
     },
     { 
       img: `${base}/images/project5.jpg`, 
       title: 'FUNDIFIX WEBSITE',
-      link: '#'
+      link: '' // empty = no link
     },
     { 
       img: `${base}/images/project4.jpg`, 
       title: 'ATTENDANCE TRACKER',
-      link: '#'
+      link: '' // empty = no link
     },
   ];
 
@@ -35,14 +35,24 @@ const Portfolio = () => {
             />
             <div className="portfolio-overlay">
               <h3>{project.title}</h3>
-              <a 
-                href={project.link} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="view-button"
-              >
-                View Project
-              </a>
+
+              {project.link ? (
+                <a 
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="view-button"
+                >
+                  View Project
+                </a>
+              ) : (
+                <button 
+                  className="view-button disabled"
+                  disabled
+                >
+                  Coming Soon
+                </button>
+              )}
             </div>
           </div>
         ))}
