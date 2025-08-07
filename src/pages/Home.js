@@ -1,8 +1,8 @@
 import React from 'react';
 
 const Home = () => {
-  // Manually add the base path if you're deploying under a subfolder like GitHub Pages
-  const imagePath = `${process.env.NODE_ENV === 'production' ? '/Best-Portfolio' : ''}/images/kallenpassport.jpg`;
+  // Image path relative to the public folder
+  const imagePath = '/images/kallenpassport.jpg';
 
   return (
     <section className="hero">
