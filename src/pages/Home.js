@@ -1,6 +1,9 @@
 import React from 'react';
 
 const Home = () => {
+  // Manually add the base path if you're deploying under a subfolder like GitHub Pages
+  const imagePath = `${process.env.NODE_ENV === 'production' ? '/Best-Portfolio' : ''}/images/kallenpassport.jpg`;
+
   return (
     <section className="hero">
       <div className="hero-content">
@@ -12,16 +15,14 @@ const Home = () => {
             <p>Mugambi From Kenya</p>
           </div>
         </div>
-       <div className="image-container">
+        <div className="image-container">
           <img 
-        src={`${process.env.PUBLIC_URL}/images/kallenpassport.jpg`} 
-        alt="Kallen Mugambi" 
-        className="profile-image"
-        loading="eager"
-      />
-
-    </div>
-
+            src={imagePath}
+            alt="Kallen Mugambi"
+            className="profile-image"
+            loading="eager"
+          />
+        </div>
       </div>
     </section>
   );
