@@ -5,7 +5,7 @@ const Portfolio = () => {
 
   const projects = [
     { 
-      img: `${base}/images/catadoption.png`, 
+      img: `${base}/images/catadoption.jpg`, 
       title: 'CAT ADOPTION WEBSITE',
       link: 'https://kallendev.github.io/CATADOPTION/index.html'
     },
