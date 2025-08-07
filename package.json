@@ -1,12 +1,15 @@
 {
   "name": "best-portfolio",
+  "homepage": "https://kallendev.github.io/Best-Portfolio",
   "version": "1.0.0",
   "description": "Welcome to my personal portfolio website — a showcase of my journey as a **web developer**, **graphic designer**, and **tech enthusiast**. This platform highlights my skills, recent projects, blog posts, and the creative spark I bring to every task.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --mode development --open",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
@@ -23,7 +26,9 @@
     "@babel/preset-env": "^7.28.0",
     "@babel/preset-react": "^7.27.1",
     "babel-loader": "^10.0.0",
+    "copy-webpack-plugin": "^13.0.0",
     "css-loader": "^7.1.2",
+    "gh-pages": "^6.3.0",
     "html-webpack-plugin": "^5.6.3",
     "style-loader": "^4.0.0",
     "webpack": "^5.101.0",

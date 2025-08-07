@@ -1,11 +1,13 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin'); // ✅ NEW
 
 module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'main.js',
+    publicPath: '/Best-Portfolio/', // ✅ Important for GitHub Pages
   },
   mode: 'development',
   devServer: {
@@ -31,11 +33,19 @@ module.exports = {
     ],
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: './public/index.html', // make sure you have this file
-    }),
-  ],
-  resolve: {
-    extensions: ['.js', '.jsx'],
-  },
+  new HtmlWebpackPlugin({
+    template: './public/index.html',
+  }),
+  new CopyWebpackPlugin({
+    patterns: [
+      {
+        from: 'public',
+        to: '.',
+        globOptions: {
+          ignore: ['**/index.html'], // ✅ Prevent conflict
+        },
+      },
+    ],
+  }),
+],
 };
