@@ -7,7 +7,7 @@ Welcome to my personal portfolio website — a showcase of my journey as a **web
 ## 🔗 Live URL
 
 👉 **[Visit the live site here](https://your-portfolio-url.netlify.app)**  
-_(Replace with your actual Netlify or GitHub Pages URL)_
+
 
 ---
 
