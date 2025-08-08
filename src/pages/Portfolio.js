@@ -10,7 +10,7 @@ const Portfolio = () => {
       link: 'https://kallendev.github.io/CATADOPTION/index.html'
     },
     { 
-      img: `${base}/images/project5.jpg`, 
+      img: `${base}/images/fundifix.JPG`, 
       title: 'FUNDIFIX WEBSITE',
       link: '' // empty = no link
     },
