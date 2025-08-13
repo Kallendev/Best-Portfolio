@@ -516,49 +516,51 @@ body {
   }
 }
 
-/* Footer Styles - Restored */
+/* Footer Styles - Improved Layout */
 .footer {
   background: var(--secondary);
-  padding: 4rem 0 2rem; /* restore original spacing */
+  padding: 2.5rem 0 1.5rem; /* smaller than original but not cramped */
   margin-top: auto;
 }
 
 .footer-content {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 1.5rem;
+  gap: 2rem;
 }
 
 .footer-section {
-  margin-bottom: 1.5rem;
+  flex: 1 1 250px;
 }
 
 .footer-section h3 {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+  margin-bottom: 0.6rem;
 }
 
 .footer-section p {
   font-size: 0.9rem;
-  opacity: 0.8;
+  opacity: 0.85;
 }
 
 .footer-section h4 {
-  font-size: 1rem;
-  margin-bottom: 0.8rem;
+  font-size: 1.05rem;
+  margin-bottom: 0.6rem;
   color: var(--primary);
 }
 
 .footer-section ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .footer-section li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
 }
 
 .footer-section a {
@@ -572,13 +574,14 @@ body {
   color: var(--primary);
 }
 
+/* Social Links */
 .social-links {
   display: flex;
-  gap: 1rem;
+  gap: 0.8rem;
 }
 
 .social-links .icon {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: var(--light);
   transition: color 0.3s ease;
 }
@@ -587,17 +590,19 @@ body {
   color: var(--primary);
 }
 
+/* Bottom Bar */
 .footer-bottom {
   text-align: center;
   padding: 1rem;
   margin-top: 2rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255,255,255,0.1);
 }
 
 .footer-bottom p {
   font-size: 0.8rem;
-  opacity: 0.7;
+  opacity: 0.75;
 }
+
 
 .portfolio-section {
   padding: 4rem 2rem;
