@@ -1,6 +1,8 @@
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'; 
 import { Link } from 'react-router-dom';
 import React from 'react';
+import '../components/Footer.css'; // Ensure you have the correct path to your CSS file
+
 
 const Footer = () => {
   // Dynamic base path for local and GitHub Pages

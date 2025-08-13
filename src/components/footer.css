@@ -1,0 +1,9 @@
+.footer-logo {
+  margin-top: 15px;
+  text-align: right; /* moves the image to the right side */
+}
+
+.footer-logo img {
+  width: 100px;
+  height: auto;
+}
