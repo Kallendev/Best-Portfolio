@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import React from 'react';
 
 const Footer = () => {
-  // This makes the base path dynamic for local and GitHub Pages
+  // Dynamic base path for local and GitHub Pages
   const base = '/Best-Portfolio';
 
   return (
@@ -24,9 +24,18 @@ const Footer = () => {
             <li><Link to="/portfolio">Work</Link></li>
             <li><Link to="/contact">Contact</Link></li>
           </ul>
+
+          {/* Logo placed right after Quick Links */}
+          <div className="footer-logo" style={{ marginTop: "15px" }}>
+            <img
+              src={`${base}/images/Kallendev.png`}
+              alt="Kallen Logo"
+              style={{ width: "100px", height: "auto" }}
+            />
+          </div>
         </div>
 
-        {/* Right Section - Socials + Logo */}
+        {/* Right Section - Socials */}
         <div className="footer-section">
           <h4>Connect</h4>
           <div className="social-links">
@@ -39,14 +48,6 @@ const Footer = () => {
             <a href="https://x.com/kallenmugambi" target="_blank" rel="noopener noreferrer">
               <FaTwitter className="icon" />
             </a>
-          </div>
-          {/* Logo */}
-          <div className="footer-logo" style={{ marginTop: "10px" }}>
-            <img
-              src={`${base}/images/Kallendev.png`}
-              alt="Kallen Logo"
-              style={{ width: "100px", height: "auto" }}
-            />
           </div>
         </div>
       </div>
