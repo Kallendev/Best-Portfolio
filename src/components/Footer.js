@@ -4,7 +4,7 @@ import React from 'react';
 
 const Footer = () => {
   // This makes the base path dynamic for local and GitHub Pages
-  const base = process.env.PUBLIC_URL;
+  const base = '/Best-Portfolio';
 
   return (
     <footer className="footer">
