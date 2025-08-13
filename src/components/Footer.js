@@ -43,7 +43,7 @@ const Footer = () => {
           {/* Logo */}
           <div className="footer-logo" style={{ marginTop: "10px" }}>
             <img
-              src={`${base}/images/Kallendev-logo.jpg`}
+              src={`${base}/images/Kallendev.jpg`}
               alt="Kallen Logo"
               style={{ width: "100px", height: "auto" }}
             />
