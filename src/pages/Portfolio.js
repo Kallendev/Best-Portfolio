@@ -12,7 +12,7 @@ const Portfolio = () => {
     { 
       img: `${base}/images/fundifix.JPG`, 
       title: 'FUNDIFIX WEBSITE',
-      link: '' // empty = no link
+      link: 'https://fundifix.vercel.app/' // empty = no link
     },
     { 
       img: `${base}/images/project4.jpg`, 
