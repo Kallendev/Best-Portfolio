@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'; 
 import { Link } from 'react-router-dom';
 import React from 'react';
 
@@ -6,11 +6,14 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-content">
+        
+        {/* Left Section */}
         <div className="footer-section">
           <h3>Kallen Mugambi</h3>
           <p>Software Engineer & Graphic Designer</p>
         </div>
         
+        {/* Middle Section */}
         <div className="footer-section">
           <h4>Quick Links</h4>
           <ul>
@@ -20,6 +23,7 @@ const Footer = () => {
           </ul>
         </div>
 
+        {/* Right Section - Socials + Logo */}
         <div className="footer-section">
           <h4>Connect</h4>
           <div className="social-links">
@@ -33,9 +37,18 @@ const Footer = () => {
               <FaTwitter className="icon" />
             </a>
           </div>
+          {/* Logo */}
+          <div className="footer-logo" style={{ marginTop: "10px" }}>
+            <img 
+              src="/Kallendev-logo.jpg" 
+              alt="Kallendev Logo" 
+              style={{ width: "100px", height: "auto" }} 
+            />
+          </div>
         </div>
       </div>
       
+      {/* Bottom Bar */}
       <div className="footer-bottom">
         <p>&copy; {new Date().getFullYear()} Kallen. All rights reserved</p>
       </div>
