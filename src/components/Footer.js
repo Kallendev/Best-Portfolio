@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import React from 'react';
 
 const Footer = () => {
+  // This makes the base path dynamic for local and GitHub Pages
+  const base = process.env.PUBLIC_URL;
+
   return (
     <footer className="footer">
       <div className="footer-content">
@@ -40,11 +43,10 @@ const Footer = () => {
           {/* Logo */}
           <div className="footer-logo" style={{ marginTop: "10px" }}>
             <img
-              src="/images/Kallendev-logo.jpg"
+              src={`${base}/images/Kallendev-logo.jpg`}
               alt="Kallen Logo"
               style={{ width: "100px", height: "auto" }}
             />
-
           </div>
         </div>
       </div>
